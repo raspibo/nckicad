@@ -1,0 +1,164 @@
+(pcb /home/raspibo/Documenti/kicad_pro/esempi/03_reg_tens_LD1117/03_reg_tens_LD1117.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "0.201504151001+5600~22~ubuntu14.04.1-product")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer In1.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (rect pcb 131415 -93736 186085 -104079)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component w_capacitors:CP_4x5mm
+      (place C1 167640 -99060 front 180 (PN CP))
+      (place C2 149860 -99060 front 180 (PN CP))
+    )
+    (component Socket_Strips:Socket_Strip_Angled_1x02
+      (place P1 175260 -101600 front 90 (PN CONN_01X02))
+      (place P2 142240 -99060 front 270 (PN CONN_01X02))
+    )
+    (component w_smd_trans:sot223
+      (place U1 157480 -99060 front 0 (PN LD1117S33TR))
+    )
+  )
+  (library
+    (image w_capacitors:CP_4x5mm
+      (outline (path signal 304.8  -700 2100  700 2100))
+      (outline (path signal 304.8  -1200 1900  1200 1900))
+      (outline (path signal 304.8  -1500 1700  1500 1700))
+      (outline (path signal 300  1000 800  1600 800))
+      (outline (path signal 304.8  2300 0  2187.43 -710.739  1860.74 -1351.91  1351.91 -1860.74
+            710.739 -2187.43  0 -2300  -710.739 -2187.43  -1351.91 -1860.74
+            -1860.74 -1351.91  -2187.43 -710.739  -2300 0  -2187.43 710.739
+            -1860.74 1351.91  -1351.91 1860.74  -710.739 2187.43  0 2300
+            710.739 2187.43  1351.91 1860.74  1860.74 1351.91  2187.43 710.739))
+      (pin Rect[A]Pad_1200x1200_um 1 0 -750)
+      (pin Round[A]Pad_1200_um 2 0 750)
+    )
+    (image Socket_Strips:Socket_Strip_Angled_1x02
+      (outline (path signal 50  -1750 1500  -1750 -10600))
+      (outline (path signal 50  4300 1500  4300 -10600))
+      (outline (path signal 50  -1750 1500  4300 1500))
+      (outline (path signal 50  -1750 -10600  4300 -10600))
+      (outline (path signal 150  3810 -10100  3810 -1270))
+      (outline (path signal 150  1270 -10100  3810 -10100))
+      (outline (path signal 150  1270 -1270  1270 -10100))
+      (outline (path signal 150  1270 -1270  3810 -1270))
+      (outline (path signal 150  -1270 -1270  1270 -1270))
+      (outline (path signal 150  0 1400  -1550 1400))
+      (outline (path signal 150  -1550 1400  -1550 0))
+      (outline (path signal 150  -1270 -1270  -1270 -10100))
+      (outline (path signal 150  -1270 -10100  1270 -10100))
+      (outline (path signal 150  1270 -10100  1270 -1270))
+      (pin Rect[A]Pad_2032x2032_um 1 0 0)
+      (pin Oval[A]Pad_2032x2032_um 2 2540 0)
+    )
+    (image w_smd_trans:sot223
+      (outline (path signal 127  -1549.4 3644.9  1549.4 3644.9))
+      (outline (path signal 127  1549.4 3644.9  1549.4 1854.2))
+      (outline (path signal 127  -1549.4 3644.9  -1549.4 1854.2))
+      (outline (path signal 127  1892.3 -3644.9  2705.1 -3644.9))
+      (outline (path signal 127  2705.1 -3644.9  2705.1 -1854.2))
+      (outline (path signal 127  1892.3 -3644.9  1892.3 -1854.2))
+      (outline (path signal 127  -406.4 -3644.9  -406.4 -1854.2))
+      (outline (path signal 127  406.4 -3644.9  406.4 -1854.2))
+      (outline (path signal 127  -406.4 -3644.9  406.4 -3644.9))
+      (outline (path signal 127  -2705.1 -3644.9  -1892.3 -3644.9))
+      (outline (path signal 127  -1892.3 -3644.9  -1892.3 -1854.2))
+      (outline (path signal 127  -2705.1 -3644.9  -2705.1 -1854.2))
+      (outline (path signal 127  3352.8 -1854.2  -3352.8 -1854.2))
+      (outline (path signal 127  -3352.8 -1854.2  -3352.8 1854.2))
+      (outline (path signal 127  -3352.8 1854.2  3352.8 1854.2))
+      (outline (path signal 127  3352.8 1854.2  3352.8 -1854.2))
+      (pin Rect[T]Pad_1300.48x1800.86_um 1 -2301.24 -2999.74)
+      (pin Rect[T]Pad_1300.48x1800.86_um 2 0 -2999.74)
+      (pin Rect[T]Pad_1300.48x1800.86_um 3 2301.24 -2999.74)
+      (pin Rect[T]Pad_3799.84x1800.86_um 4 0 2999.74)
+    )
+    (padstack Round[A]Pad_1200_um
+      (shape (circle F.Cu 1200))
+      (shape (circle In1.Cu 1200))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_2032x2032_um
+      (shape (path F.Cu 2032  0 0  0 0))
+      (shape (path In1.Cu 2032  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2032x2032_um
+      (shape (rect F.Cu -1016 -1016 1016 1016))
+      (shape (rect In1.Cu -1016 -1016 1016 1016))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_3799.84x1800.86_um
+      (shape (rect F.Cu -1899.92 -900.43 1899.92 900.43))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1200x1200_um
+      (shape (rect F.Cu -600 -600 600 600))
+      (shape (rect In1.Cu -600 -600 600 600))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1300.48x1800.86_um
+      (shape (rect F.Cu -650.24 -900.43 650.24 900.43))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle In1.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(C1-Pad1)"
+      (pins C1-1 P1-2 U1-3)
+    )
+    (net GND
+      (pins C1-2 C2-2 P1-1 P2-1 U1-1)
+    )
+    (net "Net-(C2-Pad1)"
+      (pins C2-1 P2-2 U1-2)
+    )
+    (class kicad_default "" GND "Net-(C1-Pad1)" "Net-(C2-Pad1)"
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+    (wire (path In1.Cu 250  167640 -98310  164580 -98310)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path In1.Cu 250  161290 -101600  160020 -101600)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path In1.Cu 250  164580 -98310  161290 -101600)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path In1.Cu 250  175260 -99060  172720 -99060)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path In1.Cu 250  171970 -98310  167640 -98310)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path In1.Cu 250  172720 -99060  171970 -98310)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path In1.Cu 250  175260 -101600  169430 -101600  167640 -99810)(net GND)(type protect))
+  )
+)

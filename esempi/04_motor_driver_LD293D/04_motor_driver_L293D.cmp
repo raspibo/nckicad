@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by Cvpcb 0.201504151001+5600~22~ubuntu14.04.1-product   date = ven 17 apr 2015 00:11:20 CEST
+
+BeginCmp
+TimeStamp = /55302750;
+Reference = IC1;
+ValeurCmp = L293D;
+IdModule  = w_pth_circuits:dil_16-300;
+EndCmp
+
+BeginCmp
+TimeStamp = /553037A1;
+Reference = P1;
+ValeurCmp = MOTOR1_DIRECTION;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01;
+EndCmp
+
+BeginCmp
+TimeStamp = /55302BA5;
+Reference = P2;
+ValeurCmp = MOTOR1_ENABLE;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01;
+EndCmp
+
+BeginCmp
+TimeStamp = /55302837;
+Reference = P3;
+ValeurCmp = CONN_01X02;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /55302B50;
+Reference = P4;
+ValeurCmp = MOTOR2_ENABLE;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01;
+EndCmp
+
+BeginCmp
+TimeStamp = /553042CC;
+Reference = P5;
+ValeurCmp = CONN_01X02;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /553042FF;
+Reference = P6;
+ValeurCmp = MOTOR2_DIRECTION;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01;
+EndCmp
+
+BeginCmp
+TimeStamp = /55306F67;
+Reference = P7;
+ValeurCmp = V_MOT;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x01;
+EndCmp
+
+BeginCmp
+TimeStamp = /55302C9A;
+Reference = Q1;
+ValeurCmp = Q_NPN_BCE;
+IdModule  = w_to:to92_3;
+EndCmp
+
+BeginCmp
+TimeStamp = /553042DD;
+Reference = Q2;
+ValeurCmp = Q_NPN_BCE;
+IdModule  = w_to:to92_3;
+EndCmp
+
+BeginCmp
+TimeStamp = /553036E0;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = w_pth_resistors:R15.5x6_vert;
+EndCmp
+
+BeginCmp
+TimeStamp = /55302E30;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = w_pth_resistors:R15.5x6_vert;
+EndCmp
+
+BeginCmp
+TimeStamp = /553042EB;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = w_pth_resistors:R15.5x6_vert;
+EndCmp
+
+BeginCmp
+TimeStamp = /553042F5;
+Reference = R4;
+ValeurCmp = R;
+IdModule  = w_pth_resistors:R15.5x6_vert;
+EndCmp
+
+EndListe

@@ -1,0 +1,59 @@
+Cmp-Mod V01 Created by Cvpcb 0.201504151001+5600~22~ubuntu14.04.1-product   date = sab 18 apr 2015 22:18:17 CEST
+
+BeginCmp
+TimeStamp = /55317935;
+Reference = 10K1;
+ValeurCmp = R;
+IdModule  = w_pth_resistors:RC03;
+EndCmp
+
+BeginCmp
+TimeStamp = /553176DC;
+Reference = 16mHz1;
+ValeurCmp = Crystal;
+IdModule  = w_crystal:crystal_hc-49u;
+EndCmp
+
+BeginCmp
+TimeStamp = /55317792;
+Reference = 22pF1;
+ValeurCmp = C;
+IdModule  = w_capacitors:cnp_3mm_disc;
+EndCmp
+
+BeginCmp
+TimeStamp = /55317800;
+Reference = 22pF2;
+ValeurCmp = C;
+IdModule  = w_capacitors:cnp_3mm_disc;
+EndCmp
+
+BeginCmp
+TimeStamp = /55318912;
+Reference = 100nF1;
+ValeurCmp = C;
+IdModule  = w_capacitors:cnp_7.5mm_disc;
+EndCmp
+
+BeginCmp
+TimeStamp = /553174EC;
+Reference = IC1;
+ValeurCmp = ATMEGA328P-P;
+IdModule  = w_pth_circuits:dil_28-300;
+EndCmp
+
+BeginCmp
+TimeStamp = /55318732;
+Reference = P1;
+ValeurCmp = CONN_01X05;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x05;
+EndCmp
+
+BeginCmp
+TimeStamp = /55317B9E;
+Reference = SW1;
+ValeurCmp = RESET;
+IdModule  = w_switch:PCB_PUSH;
+EndCmp
+
+EndListe

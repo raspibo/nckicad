@@ -1,0 +1,4 @@
+Item,Reference(s),Value,Quantity
+1,J1,Arduino_Header,1
+2,L1 L2 L3 L4,INDUCTOR_SMALL,4
+3,U1,ULN2803,1

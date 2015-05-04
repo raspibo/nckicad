@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /home/raspibo/Documenti/nckicad/esempi/08_arduino_shield/08_arduino_shield.sch)
-    (date "dom 03 mag 2015 23:11:18 CEST")
-    (tool "Eeschema 0.201505021002+5636~23~ubuntu14.04.1-product")
+    (date "lun 04 mag 2015 19:15:36 CEST")
+    (tool "Eeschema 0.201504281001+5628~23~ubuntu14.04.1-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -23,7 +23,7 @@
       (tstamp 554689D2))
     (comp (ref U1)
       (value ULN2803)
-      (footprint Sockets_DIP:DIP-18__300_ELL)
+      (footprint w_pth_circuits:dil_18-300)
       (libsource (lib w_analog) (part ULN2803))
       (sheetpath (names /) (tstamps /))
       (tstamp 55468A7B))
@@ -53,6 +53,7 @@
       (tstamp 55469476))
     (comp (ref P1)
       (value CONN_01X02)
+      (footprint w_conn_gmkds:gmkds_3-2-7,62)
       (libsource (lib conn) (part CONN_01X02))
       (sheetpath (names /) (tstamps /))
       (tstamp 55469CC4)))
@@ -64,18 +65,6 @@
       (pins
         (pin (num 1) (name 1) (type input))
         (pin (num 2) (name 2) (type input))))
-    (libpart (lib conn) (part CONN_01X02)
-      (footprints
-        (fp Pin_Header_Straight_1X02)
-        (fp Pin_Header_Angled_1X02)
-        (fp Socket_Strip_Straight_1X02)
-        (fp Socket_Strip_Angled_1X02))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X02))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
     (libpart (lib w_analog) (part ULN2803)
       (description "Darlington Transistor array")
       (docs /home/walter/Documenti/Elettronica/DATA_SHEET/Elettronici/Integrati/Analogici/Drivers/TI_ULN2803A.pdf)
@@ -136,16 +125,28 @@
         (pin (num 29) (name GND) (type passive))
         (pin (num 30) (name AREF) (type passive))
         (pin (num 31) (name AD4/SDA) (type passive))
-        (pin (num 32) (name AD5/SCL) (type passive)))))
+        (pin (num 32) (name AD5/SCL) (type passive))))
+    (libpart (lib conn) (part CONN_01X02)
+      (footprints
+        (fp Pin_Header_Straight_1X02)
+        (fp Pin_Header_Angled_1X02)
+        (fp Socket_Strip_Straight_1X02)
+        (fp Socket_Strip_Angled_1X02))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X02))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive)))))
   (libraries
     (library (logical w_analog)
       (uri /home/raspibo/kicad_lib/smisioto-eu/kicad_libs/library/w_analog.lib))
+    (library (logical w_connectors)
+      (uri /home/raspibo/kicad_lib/smisioto-eu/kicad_libs/library/w_connectors.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
-    (library (logical w_connectors)
-      (uri /home/raspibo/kicad_lib/smisioto-eu/kicad_libs/library/w_connectors.lib)))
+      (uri /usr/share/kicad/library/device.lib)))
   (nets
     (net (code 1) (name "Net-(J1-Pad24)")
       (node (ref J1) (pin 24))

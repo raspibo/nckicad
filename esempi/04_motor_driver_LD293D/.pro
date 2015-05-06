@@ -1,14 +1,18 @@
-update=mer 06 mag 2015 18:32:15 CEST
+update=mer 06 mag 2015 18:49:41 CEST
 version=1
 last_client=kicad
-[cvpcb]
-version=1
-NetIExt=net
 [general]
 version=1
+RootSch=
+BoardNm=
 [eeschema]
 version=1
 LibDir=
+NetFmtName=
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -40,24 +44,26 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=stepper drivers
+[cvpcb]
+version=1
+NetIExt=net
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=04_motor_driver_L293D.net
 UseCmpFile=1
-PadDrill=0.6
-PadDrillOvalY=0.6
-PadSizeH=1.5
-PadSizeV=1.5
+PadDrill=0.762
+PadDrillOvalY=0.762
+PadSizeH=1.524
+PadSizeV=1.524
 PcbTextSizeV=1.5
 PcbTextSizeH=1.5
 PcbTextThickness=0.3
 ModuleTextSizeV=1
 ModuleTextSizeH=1
 ModuleTextSizeThickness=0.15
-SolderMaskClearance=0
+SolderMaskClearance=0.2
 SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
-BoardOutlineThickness=0.09999999999999999
+BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15

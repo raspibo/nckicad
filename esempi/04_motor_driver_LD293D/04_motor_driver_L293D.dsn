@@ -38,6 +38,10 @@
       (place D2 138430 -107950 front 0 (PN D))
       (place D3 138430 -82550 front 0 (PN D))
       (place D4 154940 -82550 front 180 (PN D))
+      (place D5 153670 -104140 front 180 (PN D))
+      (place D6 138430 -104140 front 0 (PN D))
+      (place D7 138430 -86360 front 0 (PN D))
+      (place D8 154940 -86360 front 180 (PN D))
     )
     (component "w_pth_circuits:dil_16-300"
       (place IC1 146050 -95250 front 0 (PN L293D))
@@ -47,17 +51,17 @@
       (place P2 129540 -109220 front 90 (PN MOTOR1_ENABLE))
       (place P4 129540 -95250 front 90 (PN MOTOR2_ENABLE))
       (place P6 129540 -104140 front 90 (PN MOTOR2_DIRECTION))
-      (place P7 161418 -86680.8 front 90 (PN CONN_01X01))
-      (place P8 161418 -91226.1 front 90 (PN CONN_01X01))
-      (place P9 161290 -95370.3 front 90 (PN CONN_01X01))
+      (place P7 161290 -90170 front 90 (PN CONN_01X01))
+      (place P8 161418 -93766.1 front 90 (PN CONN_01X01))
+      (place P9 161290 -97910.3 front 90 (PN CONN_01X01))
     )
     (component w_pin_strip:pin_strip_2
-      (place P3 146050 -104140 front 180 (PN CONN_01X02))
-      (place P5 146050 -86360 front 180 (PN CONN_01X02))
+      (place P3 146050 -106680 front 270 (PN CONN_01X02))
+      (place P5 146050 -83820 front 270 (PN CONN_01X02))
     )
     (component w_to:to92_3
-      (place Q1 130810 -87630 front 0 (PN Q_NPN_BCE))
-      (place Q2 160020 -104140 front 180 (PN Q_NPN_BCE))
+      (place Q1 130810 -82550 front 90 (PN Q_NPN_BCE))
+      (place Q2 161290 -107950 front 270 (PN Q_NPN_BCE))
     )
     (component w_pth_resistors:RC03
       (place R1 138430 -111760 front 180 (PN R))
@@ -172,22 +176,19 @@
   )
   (network
     (net +5V
-      (pins D1-1 D3-1 IC1-16 P8-1 R2-1 R3-1)
+      (pins D1-1 D3-1 IC1-16 P8-1 R2-1 R3-1 D5-1 D7-1)
     )
     (net "Net-(D1-Pad2)"
-      (pins D1-2 IC1-3 P3-2)
+      (pins D1-2 IC1-3 P3-2 D6-1)
     )
     (net "Net-(D2-Pad1)"
-      (pins D2-1 IC1-6 P3-1)
+      (pins D2-1 IC1-6 P3-1 D5-2)
     )
     (net GND
-      (pins D2-2 D4-2 IC1-4 IC1-5 IC1-12 IC1-13 P9-1 Q1-3 Q2-3)
+      (pins D2-2 D4-2 IC1-4 IC1-5 IC1-12 IC1-13 P9-1 Q1-3 Q2-3 D6-2 D8-2)
     )
     (net "Net-(D3-Pad2)"
-      (pins D3-2 IC1-14 P5-2)
-    )
-    (net "Net-(D4-Pad1)"
-      (pins D4-1 IC1-11 P5-1)
+      (pins D3-2 D4-1 IC1-11 P5-1)
     )
     (net "Net-(IC1-Pad1)"
       (pins IC1-1 P2-1)
@@ -216,8 +217,11 @@
     (net "Net-(Q2-Pad1)"
       (pins Q2-1 R4-2)
     )
+    (net "Net-(D7-Pad2)"
+      (pins IC1-14 P5-2 D7-2 D8-1)
+    )
     (class kicad_default "" +5V GND "Net-(D1-Pad2)" "Net-(D2-Pad1)" "Net-(D3-Pad2)"
-      "Net-(D4-Pad1)" "Net-(IC1-Pad1)" "Net-(IC1-Pad10)" "Net-(IC1-Pad15)"
+      "Net-(D4-Pad1)" "Net-(D7-Pad2)" "Net-(IC1-Pad1)" "Net-(IC1-Pad10)" "Net-(IC1-Pad15)"
       "Net-(IC1-Pad2)" "Net-(IC1-Pad7)" "Net-(IC1-Pad9)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)"
       VCC
       (circuit

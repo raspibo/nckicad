@@ -11,67 +11,88 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 348)
+    (start_pass_no 1299)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.0)
+      (against_preferred_direction_trace_costs 3.5)
     )
-    (layer_rule In1.Cu
+    (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.0)
+      (against_preferred_direction_trace_costs 1.4)
     )
   )
   (rule
-    (width 400.0)
+    (width 250.0)
     (clear 200.2)
-    (clear 200.0 (type smd_to_turn_gap))
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 300.2 (type default_Motor))
     (clear 50.0 (type smd_smd))
+    (clear 300.2 (type smd_Motor))
+    (clear 300.2 (type "kicad_default"_Motor))
+    (clear 300.2 (type Motor_Motor))
   )
-  (padstack "Via[0-1]_1200:800_um"
+  (padstack "Via[0-1]_600:400_um"
     (shape
-      (circle F.Cu 1200.0 0.0 0.0)
+      (circle F.Cu 600.0 0.0 0.0)
     )
     (shape
-      (circle In1.Cu 1200.0 0.0 0.0)
+      (circle B.Cu 600.0 0.0 0.0)
     )
     (attach off)
   )
   (via 
-    "Via[0-1]_1200:800_um" "Via[0-1]_1200:800_um" default
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
   )
   (via 
-    "Via[0-1]_1200:800_um-kicad_default" "Via[0-1]_1200:800_um" "kicad_default"
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:400_um-Motor" "Via[0-1]_600:400_um" Motor
   )
   (via_rule
-    default "Via[0-1]_1200:800_um"
+    default "Via[0-1]_600:400_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_1200:800_um-kicad_default"
+    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
+  )
+  (via_rule
+    Motor "Via[0-1]_600:400_um-Motor"
   )
   (class default
     (clearance_class default)
     (via_rule default)
     (rule
-      (width 400.0)
+      (width 250.0)
     )
     (circuit 
-      (use_layer F.Cu In1.Cu)
+      (use_layer F.Cu B.Cu)
     )
   )
   (class "kicad_default"
-    +5V "Net-(D1-Pad2)" "Net-(D2-Pad1)" GND "Net-(D3-Pad2)" "Net-(IC1-Pad1)" "Net-(IC1-Pad2)" "Net-(IC1-Pad7)"
-    VCC "Net-(IC1-Pad9)" "Net-(IC1-Pad10)" "Net-(IC1-Pad15)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(D7-Pad2)"
+    +5V "Net-(IC1-Pad7)" "Net-(IC1-Pad10)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" 1,2EN 1,2DIR 3,4EN
+    3,4DIR "Net-(J1-Pad19)" "Net-(J1-Pad20)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
-      (width 400.0)
+      (width 250.0)
     )
     (circuit 
-      (use_layer F.Cu In1.Cu)
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Motor
+    "Net-(D1-Pad2)" GND "Net-(D3-Pad2)" "Net-(D7-Pad2)" VCC "Net-(D5-Pad2)"
+    (clearance_class Motor)
+    (via_rule Motor)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
     )
   )
 )

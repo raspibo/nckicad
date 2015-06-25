@@ -47,36 +47,40 @@
       (place R4 102235 -69850 back 180 (PN R))
     )
     (component w_pin_strip:pin_strip_2
-      (place P1 148590 -70485 front 270 (PN CONN_01X02))
-      (place P4 93980 -69850 front 90 (PN CONN_01X02))
-      (place P9 95250 -85090 front 0 (PN CONN_01X02))
-    )
-    (component w_pin_strip:pin_strip_4
-      (place P3 148590 -81280 front 270 (PN CONN_01X04))
+      (place P1 148590 -70485 front 270 (PN OUT12))
+      (place P4 93980 -69850 front 90 (PN OUT34))
+      (place P9 95250 -85090 front 0 (PN ING5V))
     )
     (component w_pin_strip:pin_strip_2mm_3
-      (place P5 123825 -85725 front 0 (PN CONN_01X03))
-      (place P8 116840 -85725 front 180 (PN CONN_01X03))
+      (place P5 123825 -85725 front 0 (PN HALL_01))
+      (place P8 116840 -85725 front 180 (PN HALL_02))
     )
     (component w_details:hole_3mm5
-      (place P6 95250 -75565 front 0 (PN CONN_01X01))
-      (place P7 141605 -67310 front 0 (PN CONN_01X01))
+      (place P6 95250 -75565 front 0 (PN HOLE1))
+      (place P7 141605 -67310 front 0 (PN HOLE2))
     )
     (component w_conn_misc:arduino_nano_header
       (place J1 114300 -73660 front 0 (PN Arduino_Nano_Header))
     )
     (component w_pin_strip:pin_strip_6
-      (place P2 140335 -78740 front 90 (PN CONN_01X06))
+      (place P2 140335 -78740 front 90 (PN ALIM_HALL))
     )
     (component w_smd_diode:sod123
       (place D1 132080 -85725 back 180 (PN D))
       (place D2 147320 -65405 back 0 (PN D))
       (place D3 110490 -85725 back 0 (PN D))
-      (place D4 144780 -73025 back 270 (PN D))
+      (place D4 145415 -69850 back 270 (PN D))
       (place D5 109855 -73660 back 180 (PN D))
       (place D6 101600 -78740 back 0 (PN D))
       (place D7 124460 -73660 back 0 (PN D))
       (place D8 118110 -73660 back 0 (PN D))
+    )
+    (component w_pin_strip:pin_strip_3
+      (place P10 102870 -85090 front 180 (PN SER))
+    )
+    (component w_pin_strip:pin_strip_5
+      (place P3 148590 -80010 front 270 (PN CONN_MOT1))
+      (place P11 144780 -80010 front 270 (PN EXT_MOT))
     )
   )
   (library
@@ -132,17 +136,6 @@
       (outline (path signal 304.8  2540 1270  2540 -1270))
       (pin Rect[A]Pad_1524x2199.64_um 1 -1270 0)
       (pin Oval[A]Pad_1524x2199.64_um 2 1270 0)
-    )
-    (image w_pin_strip:pin_strip_4
-      (outline (path signal 304.8  -2540 1270  -2540 -1270))
-      (outline (path signal 304.8  5080 -1270  -5080 -1270))
-      (outline (path signal 304.8  -5080 1270  5080 1270))
-      (outline (path signal 304.8  -5080 -1270  -5080 1270))
-      (outline (path signal 304.8  5080 1270  5080 -1270))
-      (pin Rect[A]Pad_1524x2199.64_um 1 -3810 0)
-      (pin Oval[A]Pad_1524x2199.64_um 2 -1270 0)
-      (pin Oval[A]Pad_1524x2199.64_um 3 1270 0)
-      (pin Oval[A]Pad_1524x2199.64_um 4 3810 0)
     )
     (image w_pin_strip:pin_strip_2mm_3
       (outline (path signal 304.8  3000 1000  3000 -1000))
@@ -256,6 +249,28 @@
       (pin Rect[T]Pad_850.9x850.9_um 2 1673.86 0)
       (pin Rect[T]Pad_850.9x850.9_um 1 -1673.86 0)
     )
+    (image w_pin_strip:pin_strip_3
+      (outline (path signal 304.8  -1270 -1270  -1270 1270))
+      (outline (path signal 304.8  -3810 1270  3810 1270))
+      (outline (path signal 304.8  3810 1270  3810 -1270))
+      (outline (path signal 304.8  3810 -1270  -3810 -1270))
+      (outline (path signal 304.8  -3810 -1270  -3810 1270))
+      (pin Rect[A]Pad_1524x2199.64_um 1 -2540 0)
+      (pin Oval[A]Pad_1524x2199.64_um 2 0 0)
+      (pin Oval[A]Pad_1524x2199.64_um 3 2540 0)
+    )
+    (image w_pin_strip:pin_strip_5
+      (outline (path signal 304.8  -3810 1270  -3810 -1270))
+      (outline (path signal 304.8  6350 -1270  -6350 -1270))
+      (outline (path signal 304.8  -6350 1270  6350 1270))
+      (outline (path signal 304.8  -6350 -1270  -6350 1270))
+      (outline (path signal 304.8  6350 1270  6350 -1270))
+      (pin Rect[A]Pad_1524x2199.64_um 1 -5080 0)
+      (pin Oval[A]Pad_1524x2199.64_um 2 -2540 0)
+      (pin Oval[A]Pad_1524x2199.64_um 3 0 0)
+      (pin Oval[A]Pad_1524x2199.64_um 4 2540 0)
+      (pin Oval[A]Pad_1524x2199.64_um 5 5080 0)
+    )
     (padstack Round[A]Pad_1750.06_um
       (shape (circle F.Cu 1750.06))
       (shape (circle B.Cu 1750.06))
@@ -314,7 +329,7 @@
     )
     (net GND
       (pins IC1-4 IC1-5 IC1-12 IC1-13 Q1-3 Q2-3 P5-2 P8-2 J1-29 P2-1 P2-2 P9-1 D2-2
-        D4-2 D6-2 D8-2)
+        D4-2 D6-2 D8-2 P3-5 P11-1)
     )
     (net "Net-(D3-Pad2)"
       (pins IC1-3 P1-2 D3-2 D4-1)
@@ -341,31 +356,52 @@
       (pins IC1-14 P4-2 D5-2 D6-1)
     )
     (net 1,2EN
-      (pins IC1-1 P3-4 J1-9)
+      (pins IC1-1 J1-12 P3-4)
     )
     (net 1,2DIR
-      (pins IC1-2 R1-1 P3-2 J1-7)
+      (pins IC1-2 R1-1 J1-7 P3-2)
     )
     (net 3,4EN
-      (pins IC1-9 P3-3 J1-10)
+      (pins IC1-9 J1-13 P3-3)
     )
     (net 3,4DIR
-      (pins IC1-15 R4-1 P3-1 J1-8)
+      (pins IC1-15 R4-1 J1-8 P3-1)
     )
     (net "Net-(J1-Pad19)"
       (pins P5-3 J1-19 P2-5)
     )
+    (net "Net-(J1-Pad1)"
+      (pins J1-1 P10-3)
+    )
+    (net "Net-(J1-Pad2)"
+      (pins J1-2 P10-2)
+    )
+    (net "Net-(J1-Pad4)"
+      (pins J1-4 P10-1)
+    )
+    (net "Net-(J1-Pad6)"
+      (pins J1-6 P11-3)
+    )
+    (net "Net-(J1-Pad11)"
+      (pins J1-11 P11-5)
+    )
+    (net "Net-(J1-Pad14)"
+      (pins J1-14 P11-2)
+    )
     (net "Net-(J1-Pad20)"
       (pins P8-3 J1-20 P2-6)
     )
+    (net "Net-(J1-Pad10)"
+      (pins J1-10 P11-4)
+    )
     (class kicad_default "" +5V 1,2DIR 1,2EN 3,4DIR 3,4EN "Net-(IC1-Pad10)"
-      "Net-(IC1-Pad7)" "Net-(J1-Pad1)" "Net-(J1-Pad11)" "Net-(J1-Pad12)" "Net-(J1-Pad13)"
-      "Net-(J1-Pad14)" "Net-(J1-Pad15)" "Net-(J1-Pad16)" "Net-(J1-Pad17)"
-      "Net-(J1-Pad18)" "Net-(J1-Pad19)" "Net-(J1-Pad2)" "Net-(J1-Pad20)" "Net-(J1-Pad21)"
-      "Net-(J1-Pad22)" "Net-(J1-Pad23)" "Net-(J1-Pad24)" "Net-(J1-Pad25)"
-      "Net-(J1-Pad26)" "Net-(J1-Pad28)" "Net-(J1-Pad3)" "Net-(J1-Pad30)" "Net-(J1-Pad4)"
-      "Net-(J1-Pad5)" "Net-(J1-Pad6)" "Net-(P6-Pad1)" "Net-(P7-Pad1)" "Net-(Q1-Pad1)"
-      "Net-(Q2-Pad1)"
+      "Net-(IC1-Pad7)" "Net-(J1-Pad1)" "Net-(J1-Pad10)" "Net-(J1-Pad11)" "Net-(J1-Pad12)"
+      "Net-(J1-Pad13)" "Net-(J1-Pad14)" "Net-(J1-Pad15)" "Net-(J1-Pad16)"
+      "Net-(J1-Pad17)" "Net-(J1-Pad18)" "Net-(J1-Pad19)" "Net-(J1-Pad2)" "Net-(J1-Pad20)"
+      "Net-(J1-Pad21)" "Net-(J1-Pad22)" "Net-(J1-Pad23)" "Net-(J1-Pad24)"
+      "Net-(J1-Pad25)" "Net-(J1-Pad26)" "Net-(J1-Pad28)" "Net-(J1-Pad3)" "Net-(J1-Pad30)"
+      "Net-(J1-Pad4)" "Net-(J1-Pad5)" "Net-(J1-Pad6)" "Net-(J1-Pad9)" "Net-(P6-Pad1)"
+      "Net-(P7-Pad1)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)"
       (circuit
         (use_via Via[0-1]_600:400_um)
       )

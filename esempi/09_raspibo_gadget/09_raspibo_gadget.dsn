@@ -1,0 +1,295 @@
+(pcb /home/raspibo/Documenti/nckicad/esempi/09_raspibo_gadget/09_raspibo_gadget.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "no-vcs-found-product")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  212834 -79121  212786 -78021.2  212643 -76929.8  212404 -75855
+            212073 -74805.1  211652 -73788  211144 -72811.6  210552 -71883.1
+            209882 -71009.7  209138 -70198.1  208327 -69454.4  207453 -68784.2
+            206525 -68192.7  205548 -67684.4  204531 -67263.1  203482 -66932.1
+            202407 -66693.8  201315 -66550.1  200216 -66502.1  199116 -66550.1
+            198024 -66693.8  196949 -66932.1  195900 -67263.1  194883 -67684.4
+            193906 -68192.7  192978 -68784.2  192104 -69454.4  191293 -70198.1
+            190549 -71009.7  189879 -71883.1  189287 -72811.6  188779 -73788
+            188358 -74805.1  188027 -75855  187788 -76929.8  187645 -78021.2
+            187597 -79121  187645 -80220.8  187788 -81312.2  188027 -82387
+            188358 -83436.9  188779 -84454  189287 -85430.4  189879 -86358.9
+            190549 -87232.3  191293 -88043.9  192104 -88787.6  192978 -89457.8
+            193906 -90049.3  194883 -90557.6  195900 -90978.9  196949 -91309.9
+            198024 -91548.2  199116 -91691.9  200216 -91739.9  201315 -91691.9
+            202407 -91548.2  203482 -91309.9  204531 -90978.9  205548 -90557.6
+            206525 -90049.3  207453 -89457.8  208327 -88787.6  209138 -88043.9
+            209882 -87232.3  210552 -86358.9  211144 -85430.4  211652 -84454
+            212073 -83436.9  212404 -82387  212643 -81312.2  212786 -80220.8)
+    )
+    (via "Via[0-1]_600:400_um" "Via[0-1]_1200:800_um" "Via[0-1]_3200:2500_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component raspibo_logo:raspibo_logo
+      (place P9 200025 -79375 back 180 (PN CONN_01X01))
+    )
+    (component w_smd_leds:Led_0805
+      (place D1 206375 -73660 front 135 (PN LED))
+      (place D2 204470 -75565 front 315 (PN LED))
+      (place D3 202565 -77470 front 315 (PN LED))
+      (place D4 200660 -79375 front 315 (PN LED))
+      (place D5 198755 -81280 front 315 (PN LED))
+    )
+    (component "SMD_Packages:SOIC-8-N"
+      (place IC1 205105 -83820 front 135 (PN "ATTINY85-S"))
+    )
+    (component w_smd_resistors:r_0805
+      (place R1 203200 -70485 front 135 (PN R))
+      (place R2 201295 -72390 front 135 (PN R))
+      (place R3 199390 -74295 front 135 (PN R))
+      (place R4 197485 -76200 front 135 (PN R))
+      (place R5 195580 -78105 front 135 (PN R))
+    )
+    (component w_details:hole_1mm
+      (place P2 211061 -79235.3 front 0 (PN CONN_01X01))
+    )
+    (component w_details:hole_1mm::1
+      (place P3 200025 -68453 front 0 (PN CONN_01X01))
+      (place P4 205600 -88823.8 front 0 (PN CONN_01X01))
+      (place P5 209677 -73914 front 0 (PN CONN_01X01))
+      (place P6 199974 -90398.6 front 0 (PN CONN_01X01))
+      (place P7 188976 -79502 front 0 (PN CONN_01X01))
+    )
+    (component w_conn_pc:conn_usb_B_micro_smd
+      (place P1 194310 -85725 front 315 (PN USB_OTG))
+    )
+  )
+  (library
+    (image raspibo_logo:raspibo_logo
+    )
+    (image w_smd_leds:Led_0805
+      (outline (path signal 127  200.66 0  -99.06 299.72))
+      (outline (path signal 127  -99.06 299.72  -99.06 -299.72))
+      (outline (path signal 127  -99.06 -299.72  200.66 0))
+      (outline (path signal 127  99.06 -99.06  99.06 99.06))
+      (outline (path signal 127  0 200.66  0 -200.66))
+      (outline (path signal 127  299.72 -800.1  299.72 800.1))
+      (outline (path signal 127  -299.72 800.1  -299.72 -800.1))
+      (outline (path signal 127  -1000.76 800.1  1000.76 800.1))
+      (outline (path signal 127  1000.76 800.1  1000.76 -800.1))
+      (outline (path signal 127  1000.76 -800.1  -1000.76 -800.1))
+      (outline (path signal 127  -1000.76 -800.1  -1000.76 800.1))
+      (pin Rect[T]Pad_1198.88x1198.88_um 1 -1049.02 0)
+      (pin Rect[T]Pad_1198.88x1198.88_um 2 1049.02 0)
+    )
+    (image "SMD_Packages:SOIC-8-N"
+      (outline (path signal 150  -2540 2286  2540 2286))
+      (outline (path signal 150  2540 2286  2540 -2286))
+      (outline (path signal 150  2540 -2286  -2540 -2286))
+      (outline (path signal 150  -2540 -2286  -2540 2286))
+      (outline (path signal 150  -2540 762  -2032 762))
+      (outline (path signal 150  -2032 762  -2032 -508))
+      (outline (path signal 150  -2032 -508  -2540 -508))
+      (pin Rect[T]Pad_508x1143_um 8 -1905 3175)
+      (pin Rect[T]Pad_508x1143_um 7 -635 3175)
+      (pin Rect[T]Pad_508x1143_um 6 635 3175)
+      (pin Rect[T]Pad_508x1143_um 5 1905 3175)
+      (pin Rect[T]Pad_508x1143_um 4 1905 -3175)
+      (pin Rect[T]Pad_508x1143_um 3 635 -3175)
+      (pin Rect[T]Pad_508x1143_um 2 -635 -3175)
+      (pin Rect[T]Pad_508x1143_um 1 -1905 -3175)
+    )
+    (image w_smd_resistors:r_0805
+      (outline (path signal 127  635 635  635 -635))
+      (outline (path signal 127  -635 635  -635 -609.6))
+      (outline (path signal 127  -1016 635  1016 635))
+      (outline (path signal 127  1016 635  1016 -635))
+      (outline (path signal 127  1016 -635  -1016 -635))
+      (outline (path signal 127  -1016 -635  -1016 635))
+      (pin Rect[T]Pad_1300.48x1498.6_um 1 952.5 0)
+      (pin Rect[T]Pad_1300.48x1498.6_um 2 -952.5 0)
+    )
+    (image w_details:hole_1mm
+      (outline (path signal 254  0 1016  0 -1016))
+      (outline (path signal 254  -1016 0  1016 0))
+      (outline (path signal 254  762 0  724.705 -235.471  616.471 -447.892  447.892 -616.471
+            235.471 -724.705  0 -762  -235.471 -724.705  -447.892 -616.471
+            -616.471 -447.892  -724.705 -235.471  -762 0  -724.705 235.471
+            -616.471 447.892  -447.892 616.471  -235.471 724.705  0 762
+            235.471 724.705  447.892 616.471  616.471 447.892  724.705 235.471))
+      (keepout "" (circle F.Cu 1000.76))
+      (keepout "" (circle B.Cu 1000.76))
+    )
+    (image w_details:hole_1mm::1
+      (outline (path signal 254  0 1016  0 -1016))
+      (outline (path signal 254  -1016 0  1016 0))
+      (outline (path signal 254  762 0  724.705 -235.471  616.471 -447.892  447.892 -616.471
+            235.471 -724.705  0 -762  -235.471 -724.705  -447.892 -616.471
+            -616.471 -447.892  -724.705 -235.471  -762 0  -724.705 235.471
+            -616.471 447.892  -447.892 616.471  -235.471 724.705  0 762
+            235.471 724.705  447.892 616.471  616.471 447.892  724.705 235.471))
+      (pin Round[A]Pad_1000.76_um 1 0 0)
+    )
+    (image w_conn_pc:conn_usb_B_micro_smd
+      (outline (path signal 200.66  -4201.16 -1998.98  4201.16 -1998.98))
+      (outline (path signal 200.66  -4201.16 -2100.58  4201.16 -2100.58))
+      (outline (path signal 200.66  4201.16 -2100.58  4201.16 -1899.92))
+      (outline (path signal 200.66  4201.16 -1899.92  -4201.16 -1899.92))
+      (outline (path signal 200.66  -4201.16 -1899.92  -4201.16 -2100.58))
+      (outline (path signal 200.66  -3898.9 -2100.58  -3898.9 2900.68))
+      (outline (path signal 200.66  -3898.9 2900.68  3898.9 2900.68))
+      (outline (path signal 200.66  3898.9 2900.68  3898.9 -2100.58))
+      (pin Rect[T]Pad_1173.48x1897.38_um @1 -838.2 0)
+      (pin Rect[T]Pad_1173.48x1897.38_um @2 838.2 0)
+      (pin Rect[T]Pad_2374.9x1897.38_um @3 2913.38 0)
+      (pin Rect[T]Pad_2374.9x1897.38_um @4 -2913.38 0)
+      (pin Rect[T]Pad_1473.2x2100.58_um @5 2461.26 2298.7)
+      (pin Rect[T]Pad_1473.2x2100.58_um @6 -2461.26 2298.7)
+      (pin Rect[T]Pad_449.58x1379.22_um 1 -1300.48 2659.38)
+      (pin Rect[T]Pad_449.58x1379.22_um 2 -650.24 2659.38)
+      (pin Rect[T]Pad_449.58x1379.22_um 3 0 2659.38)
+      (pin Rect[T]Pad_449.58x1379.22_um 4 650.24 2659.38)
+      (pin Rect[T]Pad_449.58x1379.22_um 5 1300.48 2659.38)
+    )
+    (padstack Round[A]Pad_1000.76_um
+      (shape (circle F.Cu 1000.76))
+      (shape (circle B.Cu 1000.76))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_2374.9x1897.38_um
+      (shape (rect F.Cu -1187.45 -948.69 1187.45 948.69))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_449.58x1379.22_um
+      (shape (rect F.Cu -224.79 -689.61 224.79 689.61))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_508x1143_um
+      (shape (rect F.Cu -254 -571.5 254 571.5))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1173.48x1897.38_um
+      (shape (rect F.Cu -586.74 -948.69 586.74 948.69))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1198.88x1198.88_um
+      (shape (rect F.Cu -599.44 -599.44 599.44 599.44))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1300.48x1498.6_um
+      (shape (rect F.Cu -650.24 -749.3 650.24 749.3))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1473.2x2100.58_um
+      (shape (rect F.Cu -736.6 -1050.29 736.6 1050.29))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+    (padstack "Via[0-1]_1200:800_um"
+      (shape (circle F.Cu 1200))
+      (shape (circle B.Cu 1200))
+      (attach off)
+    )
+    (padstack "Via[0-1]_3200:2500_um"
+      (shape (circle F.Cu 3200))
+      (shape (circle B.Cu 3200))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins IC1-4 R1-1 R2-1 R3-1 R4-1 R5-1 P3-1 P1-1)
+    )
+    (net "Net-(D1-Pad2)"
+      (pins D1-2 IC1-5 P5-1)
+    )
+    (net "Net-(D2-Pad2)"
+      (pins D2-2 IC1-6 P6-1)
+    )
+    (net "Net-(D3-Pad2)"
+      (pins D3-2 IC1-7 P4-1)
+    )
+    (net "Net-(D4-Pad2)"
+      (pins D4-2 IC1-2)
+    )
+    (net "Net-(D5-Pad2)"
+      (pins D5-2 IC1-3)
+    )
+    (net VCC
+      (pins IC1-8 P7-1 P1-5)
+    )
+    (net "Net-(D1-Pad1)"
+      (pins D1-1 R1-2)
+    )
+    (net "Net-(D2-Pad1)"
+      (pins D2-1 R2-2)
+    )
+    (net "Net-(D3-Pad1)"
+      (pins D3-1 R3-2)
+    )
+    (net "Net-(D4-Pad1)"
+      (pins D4-1 R4-2)
+    )
+    (net "Net-(D5-Pad1)"
+      (pins D5-1 R5-2)
+    )
+    (net "Net-(IC1-Pad1)"
+      (pins IC1-1)
+    )
+    (class kicad_default "" GND "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad1)"
+      "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad1)" "Net-(D4-Pad2)"
+      "Net-(D5-Pad1)" "Net-(D5-Pad2)" "Net-(IC1-Pad1)" "Net-(P1-Pad2)" "Net-(P1-Pad3)"
+      "Net-(P1-Pad4)" VCC
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+    (class bordo
+      (circuit
+        (use_via Via[0-1]_1200:800_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+    (class foro
+      (circuit
+        (use_via Via[0-1]_3200:2500_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

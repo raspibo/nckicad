@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name raspibo_logo)(type KiCad)(uri "$(KIPRJMOD)/raspibo_logo.pretty")(options "")(descr ""))
+)

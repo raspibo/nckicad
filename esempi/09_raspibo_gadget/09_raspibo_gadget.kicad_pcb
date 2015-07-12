@@ -3027,7 +3027,7 @@
     )
   )
 
-  (gr_text www.raspibo.org (at 195.326 75.184 45) (layer F.SilkS)
+  (gr_text www.raspibo.org (at 195.072 74.3331 45) (layer F.SilkS)
     (effects (font (size 1.2 1.2) (thickness 0.3) italic))
   )
 

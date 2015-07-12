@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew no-vcs-found-product)
 
   (general
-    (links 26)
-    (no_connects 4)
+    (links 25)
+    (no_connects 3)
     (area 185.3216 64.443 222.843401 92.322081)
     (thickness 1.6)
     (drawings 1)
     (tracks 84)
     (zones 0)
-    (modules 23)
+    (modules 24)
     (nets 14)
   )
 
@@ -143,6 +143,26 @@
     (via_drill 2.5)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
+  )
+
+  (module w_details:hole_2mm (layer F.Cu) (tedit 55A2CF08) (tstamp 55A2CEE2)
+    (at 209.3087 69.977)
+    (descr "Hole 2mm")
+    (fp_text reference hole_2mm (at 0 -2.794) (layer F.SilkS) hide
+      (effects (font (thickness 0.3048)))
+    )
+    (fp_text value VAL** (at 4.826 0) (layer F.SilkS) hide
+      (effects (font (thickness 0.3048)))
+    )
+    (fp_line (start 0 -1.651) (end 0 1.651) (layer F.SilkS) (width 0.254))
+    (fp_line (start -1.651 0) (end 1.651 0) (layer F.SilkS) (width 0.254))
+    (fp_circle (center 0 0) (end 1.27 -0.127) (layer F.SilkS) (width 0.254))
+    (pad 1 thru_hole circle (at 0 0) (size 1.99898 1.99898) (drill 1.99898) (layers *.Cu F.SilkS))
+    (model walter/details/hole.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module w_details:hole_1mm (layer F.Cu) (tedit 55A2CDF2) (tstamp 55B90B60)

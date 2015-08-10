@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "0.201506222247+5806~23~ubuntu14.04.1-product")
+    (host_version "0.201508080901+6071~28~ubuntu14.04.1-product")
   )
   (resolution um 10)
   (unit um)
@@ -21,8 +21,8 @@
       )
     )
     (boundary
-      (path pcb 0  91440 -87630  91440 -63500  151130 -63500  151130 -87630
-            91440 -87630)
+      (path pcb 0  91440 -87630  87630 -87630  87630 -63500  91440 -63500
+            151130 -63500  151130 -87630  91440 -87630  91440 -87630)
     )
     (via "Via[0-1]_600:400_um")
     (rule
@@ -42,12 +42,14 @@
     )
     (component w_smd_resistors:r_0805
       (place R1 132080 -78105 back 180 (PN R))
-      (place R2 132080 -69215 back 180 (PN R))
-      (place R3 128270 -76835 back 270 (PN R))
+      (place R2 131318 -69088 back 0 (PN R))
+      (place R3 123190 -73660 back 180 (PN R))
       (place R4 102235 -69850 back 180 (PN R))
+      (place R5 96266 -77216 back 270 (PN R))
+      (place R6 127762 -76708 back 90 (PN R))
     )
     (component w_pin_strip:pin_strip_2
-      (place P1 148590 -70485 front 270 (PN OUT12))
+      (place P1 147320 -66040 front 0 (PN OUT12))
       (place P4 93980 -69850 front 90 (PN OUT34))
       (place P9 95250 -85090 front 0 (PN ING5V))
     )
@@ -56,31 +58,31 @@
       (place P8 116840 -85725 front 180 (PN HALL_02))
     )
     (component w_details:hole_3mm5
-      (place P6 95250 -75565 front 0 (PN HOLE1))
+      (place P6 91440 -77470 front 0 (PN HOLE1))
       (place P7 141605 -67310 front 0 (PN HOLE2))
     )
     (component w_conn_misc:arduino_nano_header
       (place J1 114300 -73660 front 0 (PN Arduino_Nano_Header))
     )
     (component w_pin_strip:pin_strip_6
-      (place P2 140335 -78740 front 90 (PN ALIM_HALL))
+      (place P2 142240 -85090 front 180 (PN ALIM_HALL))
     )
     (component w_smd_diode:sod123
-      (place D1 132080 -85725 back 180 (PN D))
-      (place D2 147320 -65405 back 0 (PN D))
+      (place D1 140970 -70104 back 180 (PN D))
+      (place D2 147066 -70104 back 0 (PN D))
       (place D3 110490 -85725 back 0 (PN D))
-      (place D4 145415 -69850 back 270 (PN D))
-      (place D5 109855 -73660 back 180 (PN D))
-      (place D6 101600 -78740 back 0 (PN D))
-      (place D7 124460 -73660 back 0 (PN D))
-      (place D8 118110 -73660 back 0 (PN D))
+      (place D4 147066 -73406 back 0 (PN D))
+      (place D5 90424 -67310 back 270 (PN D))
+      (place D6 90170 -83566 back 90 (PN D))
+      (place D7 140970 -73406 back 0 (PN D))
+      (place D8 135636 -79502 back 90 (PN D))
     )
     (component w_pin_strip:pin_strip_3
       (place P10 102870 -85090 front 180 (PN SER))
     )
     (component w_pin_strip:pin_strip_5
-      (place P3 148590 -80010 front 270 (PN CONN_MOT1))
-      (place P11 144780 -80010 front 270 (PN EXT_MOT))
+      (place P3 143510 -77470 front 0 (PN CONN_MOT1))
+      (place P11 143510 -81280 front 0 (PN EXT_MOT))
     )
   )
   (library
@@ -325,11 +327,11 @@
       (pins IC1-6 P1-1 D1-2 D2-1)
     )
     (net +5V
-      (pins IC1-16 R2-1 R3-1 P5-1 P8-1 J1-27 P2-4 P9-2 D1-1 D3-1 D5-1 D7-1)
+      (pins IC1-16 R2-1 R3-1 P5-1 P8-1 J1-27 P2-4 P9-2)
     )
     (net GND
       (pins IC1-4 IC1-5 IC1-12 IC1-13 Q1-3 Q2-3 P5-2 P8-2 J1-29 P2-1 P2-2 P9-1 D2-2
-        D4-2 D6-2 D8-2 P3-5 P11-1)
+        D4-2 D6-2 D8-2 P3-1 P11-1 R5-2 R6-2)
     )
     (net "Net-(D3-Pad2)"
       (pins IC1-3 P1-2 D3-2 D4-1)
@@ -337,35 +339,23 @@
     (net "Net-(D7-Pad2)"
       (pins IC1-11 P4-1 D7-2 D8-1)
     )
-    (net "Net-(IC1-Pad7)"
-      (pins IC1-7 Q1-2 R2-2)
-    )
     (net VCC
-      (pins IC1-8 P2-3)
-    )
-    (net "Net-(IC1-Pad10)"
-      (pins IC1-10 Q2-2 R3-2)
-    )
-    (net "Net-(Q1-Pad1)"
-      (pins Q1-1 R1-2)
-    )
-    (net "Net-(Q2-Pad1)"
-      (pins Q2-1 R4-2)
+      (pins IC1-8 P2-3 D1-1 D3-1 D5-1 D7-1)
     )
     (net "Net-(D5-Pad2)"
       (pins IC1-14 P4-2 D5-2 D6-1)
     )
     (net 1,2EN
-      (pins IC1-1 J1-12 P3-4)
+      (pins IC1-1 J1-12 P3-5 R5-1)
     )
     (net 1,2DIR
-      (pins IC1-2 R1-1 J1-7 P3-2)
+      (pins IC1-2 R1-1 J1-7 P3-3)
     )
     (net 3,4EN
-      (pins IC1-9 J1-13 P3-3)
+      (pins IC1-9 J1-13 P3-4 R6-1)
     )
     (net 3,4DIR
-      (pins IC1-15 R4-1 J1-8 P3-1)
+      (pins IC1-15 R4-1 J1-8 P3-2)
     )
     (net "Net-(J1-Pad19)"
       (pins P5-3 J1-19 P2-5)
@@ -394,14 +384,70 @@
     (net "Net-(J1-Pad10)"
       (pins J1-10 P11-4)
     )
-    (class kicad_default "" +5V 1,2DIR 1,2EN 3,4DIR 3,4EN "Net-(IC1-Pad10)"
-      "Net-(IC1-Pad7)" "Net-(J1-Pad1)" "Net-(J1-Pad10)" "Net-(J1-Pad11)" "Net-(J1-Pad12)"
-      "Net-(J1-Pad13)" "Net-(J1-Pad14)" "Net-(J1-Pad15)" "Net-(J1-Pad16)"
-      "Net-(J1-Pad17)" "Net-(J1-Pad18)" "Net-(J1-Pad19)" "Net-(J1-Pad2)" "Net-(J1-Pad20)"
-      "Net-(J1-Pad21)" "Net-(J1-Pad22)" "Net-(J1-Pad23)" "Net-(J1-Pad24)"
-      "Net-(J1-Pad25)" "Net-(J1-Pad26)" "Net-(J1-Pad28)" "Net-(J1-Pad3)" "Net-(J1-Pad30)"
-      "Net-(J1-Pad4)" "Net-(J1-Pad5)" "Net-(J1-Pad6)" "Net-(J1-Pad9)" "Net-(P6-Pad1)"
-      "Net-(P7-Pad1)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)"
+    (net "/COLL-1"
+      (pins IC1-7 Q1-2 R2-2)
+    )
+    (net "/BASE-1"
+      (pins Q1-1 R1-2)
+    )
+    (net "/BASE-2"
+      (pins Q2-1 R4-2)
+    )
+    (net /COLL
+      (pins IC1-10 Q2-2 R3-2)
+    )
+    (net "Net-(J1-Pad3)"
+      (pins J1-3)
+    )
+    (net "Net-(J1-Pad5)"
+      (pins J1-5)
+    )
+    (net "Net-(J1-Pad9)"
+      (pins J1-9)
+    )
+    (net "Net-(J1-Pad15)"
+      (pins J1-15)
+    )
+    (net "Net-(J1-Pad16)"
+      (pins J1-16)
+    )
+    (net "Net-(J1-Pad17)"
+      (pins J1-17)
+    )
+    (net "Net-(J1-Pad18)"
+      (pins J1-18)
+    )
+    (net "Net-(J1-Pad21)"
+      (pins J1-21)
+    )
+    (net "Net-(J1-Pad22)"
+      (pins J1-22)
+    )
+    (net "Net-(J1-Pad23)"
+      (pins J1-23)
+    )
+    (net "Net-(J1-Pad24)"
+      (pins J1-24)
+    )
+    (net "Net-(J1-Pad25)"
+      (pins J1-25)
+    )
+    (net "Net-(J1-Pad26)"
+      (pins J1-26)
+    )
+    (net "Net-(J1-Pad28)"
+      (pins J1-28)
+    )
+    (net "Net-(J1-Pad30)"
+      (pins J1-30)
+    )
+    (class kicad_default "" +5V "/BASE-1" "/BASE-2" /COLL "/COLL-1" 1,2DIR
+      1,2EN 3,4DIR 3,4EN "Net-(J1-Pad1)" "Net-(J1-Pad10)" "Net-(J1-Pad11)"
+      "Net-(J1-Pad14)" "Net-(J1-Pad15)" "Net-(J1-Pad16)" "Net-(J1-Pad17)"
+      "Net-(J1-Pad18)" "Net-(J1-Pad19)" "Net-(J1-Pad2)" "Net-(J1-Pad20)" "Net-(J1-Pad21)"
+      "Net-(J1-Pad22)" "Net-(J1-Pad23)" "Net-(J1-Pad24)" "Net-(J1-Pad25)"
+      "Net-(J1-Pad26)" "Net-(J1-Pad28)" "Net-(J1-Pad3)" "Net-(J1-Pad30)" "Net-(J1-Pad4)"
+      "Net-(J1-Pad5)" "Net-(J1-Pad6)" "Net-(J1-Pad9)" "Net-(P6-Pad1)" "Net-(P7-Pad1)"
       (circuit
         (use_via Via[0-1]_600:400_um)
       )

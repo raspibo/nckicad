@@ -308,17 +308,6 @@ F 3 "" H 6800 4200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P2
-U 1 1 5597C18B
-P 6600 4100
-F 0 "P2" H 6600 4200 50  0000 C CNN
-F 1 "CONN_01X01" V 6700 4100 50  0000 C CNN
-F 2 "w_details:hole_1mm" H 6600 4100 60  0001 C CNN
-F 3 "" H 6600 4100 60  0000 C CNN
-	1    6600 4100
-	0    1    1    0   
-$EndComp
-$Comp
 L CONN_01X01 P4
 U 1 1 5597C24B
 P 6700 4100
@@ -376,5 +365,26 @@ F 2 "w_conn_pc:conn_usb_B_micro_smd" V 3050 2650 60  0001 C CNN
 F 3 "" V 3050 2650 60  0000 C CNN
 	1    3100 2750
 	0    -1   1    0   
+$EndComp
+Text Label 6600 2550 0    60   ~ 0
+MOSI
+Text Label 6600 2650 0    60   ~ 0
+MISO
+Text Label 6600 2750 0    60   ~ 0
+SCK
+Text Label 6600 3400 1    60   ~ 0
+RESET
+NoConn ~ 7650 3950
+NoConn ~ 7650 4450
+$Comp
+L CONN_01X01 P10
+U 1 1 55C532DC
+P 6600 4100
+F 0 "P10" H 6600 4200 50  0000 C CNN
+F 1 "CONN_01X01" V 6700 4100 50  0000 C CNN
+F 2 "w_details:hole_1mm" H 6600 4100 60  0000 C CNN
+F 3 "" H 6600 4100 60  0000 C CNN
+	1    6600 4100
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

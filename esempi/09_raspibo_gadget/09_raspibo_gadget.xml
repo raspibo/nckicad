@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/raspibo/Documenti/nckicad/esempi/09_raspibo_gadget/09_raspibo_gadget.sch</source>
+    <date>ven 07 ago 2015 22:50:21 CEST</date>
+    <tool>Eeschema no-vcs-found-product</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>09_raspibo_gadget.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="IC1">
+      <value>ATTINY85-S</value>
+      <footprint>SMD_Packages:SOIC-8-N</footprint>
+      <libsource lib="atmel" part="ATTINY85-S"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5597057C</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>w_smd_leds:Led_0805</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>559706D4</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>w_smd_leds:Led_0805</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55970741</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>w_smd_leds:Led_0805</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5597080F</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>w_smd_leds:Led_0805</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55970878</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED</value>
+      <footprint>w_smd_leds:Led_0805</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>559708DF</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>R</value>
+      <footprint>w_smd_resistors:r_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55970BC6</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>R</value>
+      <footprint>w_smd_resistors:r_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55970C4D</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>R</value>
+      <footprint>w_smd_resistors:r_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55970C80</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>R</value>
+      <footprint>w_smd_resistors:r_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55970CE9</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>R</value>
+      <footprint>w_smd_resistors:r_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55970D52</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>CONN_01X01</value>
+      <footprint>w_details:hole_1mm</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5597BFF9</tstamp>
+    </comp>
+    <comp ref="P5">
+      <value>CONN_01X01</value>
+      <footprint>w_details:hole_1mm</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5597C08F</tstamp>
+    </comp>
+    <comp ref="P7">
+      <value>CONN_01X01</value>
+      <footprint>w_details:hole_1mm</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5597C130</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_01X01</value>
+      <footprint>w_details:hole_1mm</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5597C18B</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>CONN_01X01</value>
+      <footprint>w_details:hole_1mm</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5597C24B</tstamp>
+    </comp>
+    <comp ref="P6">
+      <value>CONN_01X01</value>
+      <footprint>w_details:hole_1mm</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5597C2BD</tstamp>
+    </comp>
+    <comp ref="P8">
+      <value>CONN_01X01</value>
+      <footprint>raspibo_logo:contorno</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55985BF2</tstamp>
+    </comp>
+    <comp ref="P9">
+      <value>CONN_01X01</value>
+      <footprint>raspibo_logo:raspibo_logo</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55985C92</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>USB_OTG</value>
+      <footprint>w_conn_pc:conn_usb_B_micro_smd</footprint>
+      <libsource lib="conn" part="USB_OTG"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5598562A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="atmel" part="ATTINY25-S">
+      <aliases>
+        <alias>ATTINY45-S</alias>
+        <alias>ATTINY85-S</alias>
+      </aliases>
+      <description>SO8 Wide, 2k Flash, 128B SRAM, 128B EEPROM, Debug Wire</description>
+      <docs>http://www.atmel.com/images/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ATTINY25-S</field>
+        <field name="Footprint">SO8-200</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PB5(~RESET~/dW/ADC0/PCINT5)" type="BiDi"/>
+        <pin num="2" name="PB3(XTAL1/CLKI/OC1B/ADC3/PCINT3)" type="BiDi"/>
+        <pin num="3" name="PB4(XTAL2/CLKO/OC1B/ADC2/PCINT4)" type="BiDi"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="PB0(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)" type="BiDi"/>
+        <pin num="6" name="PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1)" type="BiDi"/>
+        <pin num="7" name="PB2(SCK/USCK/SCL/T0/INT0/ADC1/PCINT2)" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_OTG">
+      <description>micro/mini connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_OTG</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X01">
+      <footprints>
+        <fp>Pin_Header_Straight_1X01</fp>
+        <fp>Pin_Header_Angled_1X01</fp>
+        <fp>Socket_Strip_Straight_1X01</fp>
+        <fp>Socket_Strip_Angled_1X01</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="atmel">
+      <uri>/usr/share/kicad/library/atmel.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/SCK">
+      <node ref="IC1" pin="7"/>
+      <node ref="D3" pin="2"/>
+      <node ref="P4" pin="1"/>
+    </net>
+    <net code="2" name="/MOSI">
+      <node ref="IC1" pin="5"/>
+      <node ref="D1" pin="2"/>
+      <node ref="P5" pin="1"/>
+    </net>
+    <net code="3" name="/MISO">
+      <node ref="P6" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="4" name="Net-(D5-Pad2)">
+      <node ref="IC1" pin="3"/>
+      <node ref="D5" pin="2"/>
+    </net>
+    <net code="5" name="Net-(D4-Pad2)">
+      <node ref="IC1" pin="2"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="6" name="Net-(P9-Pad1)">
+      <node ref="P9" pin="1"/>
+    </net>
+    <net code="7" name="Net-(P8-Pad1)">
+      <node ref="P8" pin="1"/>
+    </net>
+    <net code="8" name="/RESET">
+      <node ref="P2" pin="1"/>
+      <node ref="IC1" pin="1"/>
+    </net>
+    <net code="9" name="Net-(P1-Pad6)">
+      <node ref="P1" pin="6"/>
+    </net>
+    <net code="10" name="Net-(P1-Pad4)">
+      <node ref="P1" pin="4"/>
+    </net>
+    <net code="11" name="Net-(P1-Pad3)">
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="12" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="13" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="14" name="Net-(D5-Pad1)">
+      <node ref="D5" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="15" name="Net-(D4-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="16" name="Net-(D2-Pad1)">
+      <node ref="R2" pin="2"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="17" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="18" name="GND">
+      <node ref="R2" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="P1" pin="5"/>
+      <node ref="IC1" pin="4"/>
+      <node ref="P3" pin="1"/>
+    </net>
+    <net code="19" name="VCC">
+      <node ref="P1" pin="1"/>
+      <node ref="P7" pin="1"/>
+      <node ref="IC1" pin="8"/>
+    </net>
+  </nets>
+</export>

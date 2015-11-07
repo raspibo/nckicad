@@ -1,4 +1,4 @@
-update=mar 23 giu 2015 17:29:39 CEST
+update=lun 31 ago 2015 18:46:05 CEST
 version=1
 last_client=kicad
 [general]
@@ -63,3 +63,13 @@ LibName30=contrib
 LibName31=valves
 LibName32=stepper drivers
 LibName33=/home/raspibo/kicad_lib/smisioto-eu/kicad_libs/library/w_connectors
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

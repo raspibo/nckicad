@@ -855,4 +855,28 @@ F 3 "" H 5150 4750 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	5150 4750 5150 4650
+Text Label 10000 4750 0    60   ~ 0
+RX
+Text Label 10000 4850 0    60   ~ 0
+TX
+Text Label 10000 4550 0    60   ~ 0
+GND
+Text Label 8400 3750 0    60   ~ 0
+A0
+Text Label 8400 3850 0    60   ~ 0
+A1
+Text Label 10000 3400 0    60   ~ 0
+D7
+Text Label 10000 3500 0    60   ~ 0
+D8
+Text Label 9900 3200 2    60   ~ 0
+D11
+Text Label 8950 4550 0    60   ~ 0
++5V
+Text Label 8950 4750 0    60   ~ 0
+GND
+Text Label 10000 3200 0    60   ~ 0
+D11
+Text Label 9900 4350 0    60   ~ 0
+D3
 $EndSCHEMATC
